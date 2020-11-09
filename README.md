@@ -15,3 +15,4 @@
 5. Navigate to https://incmagazine.zendesk.com/hc/admin/local_preview/start
 6. URL will change to https://incmagazine.zendesk.com/hc/en-us but sticky bar at the top will indicate "Help Center is in Preview mode"
 7. Local changes will hot reload to reflect in the browser.
+8. Push to remote master will not auto update the live theme. Navigate to https://incmagazine.zendesk.com/theming/workbench, Click the options menu on the theme with a Github icon, then select Update from GitHub. You need an admin zendesk account to do this.
