@@ -593,20 +593,23 @@ ul {
 /***** Footer *****/
 .footer {
   margin-top: 60px;
-  padding: 60px 0;
-  background-color: #535353;
+  padding: 20px 0;
+  background-color: #000000;
 }
 
 #footerContent {
   width: 900px;
   margin: 0 auto;
   text-align: center;
+  text-transform: uppercase;
+  display: flex;
 }
 
 #footerContent h4 {
 	display: inline-block;
 	color: white;
-  font-family: 'Heebo', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 700;
   padding: 0px 10px;
   font-size: 14px;
   margin: 0px;
@@ -614,6 +617,10 @@ ul {
 
 #footerContent h4:hover {
 	cursor: pointer;
+}
+
+#footerContent .copyright {
+	color: #999999;
 }
 
 .footer a {
@@ -650,6 +657,29 @@ ul {
 @media (min-width: 768px) {
   .breadcrumbs {
     margin: 0;
+  }
+  .footer a:last-of-type {
+    margin-right: 22.5%;
+  }
+  .footer a:first-of-type {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    min-height: 160px;
+  }
+  #footerContent {
+    display: grid;
+    text-align: justify;
+    padding-left: 25px;
+  }
+  #footerContent a:first-of-type{
+    padding-top: 5px;
+  }
+  #footerContent a {
+    padding-bottom: 10px;
   }
 }
 
